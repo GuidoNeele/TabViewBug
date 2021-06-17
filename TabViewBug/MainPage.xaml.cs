@@ -1,4 +1,5 @@
 ﻿using TabViewBug.LazyViews;
+using TabViewBug.Views;
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Forms;
 
@@ -21,10 +22,11 @@ namespace TabViewBug
     private void InitTabs()
     {
       var smileIcon = new FontImageSource { Glyph = Application.Current.Resources["smile"].ToString(), FontFamily = "fa", Color = Color.DarkGray };
-      var bookIcon = new FontImageSource { Glyph = Application.Current.Resources["smile"].ToString(), FontFamily = "fa", Color = Color.DarkGray };
+      var bookIcon = new FontImageSource { Glyph = Application.Current.Resources["book"].ToString(), FontFamily = "fa", Color = Color.DarkGray };
 
       this.MainTabs.TabItems.Add(new TabViewItem { Icon = smileIcon, Text = "Tab 1", Content = new Tab1LazyView() });
       this.MainTabs.TabItems.Add(new TabViewItem { Icon = bookIcon, Text = "Tab 2", Content = new Tab2LazyView() });
+      this.MainTabs.TabItems.Add(new TabViewItem { Icon = bookIcon, Text = "Tab 3", Content = new View3() });
     }
   }
 }
