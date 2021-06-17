@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application x:Class="TabViewBug.App"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+  <Application.Resources>
+
+    <x:String x:Key="smile">&#xf118;</x:String>
+    <x:String x:Key="book">&#xf02d;</x:String>
+
+  </Application.Resources>
+</Application>
